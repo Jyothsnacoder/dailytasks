@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+        height: 500px;
+        width: 500px;
+        display: grid;
+        grid-template-columns: repeat(4,150px);  
+        grid-template-rows: repeat(4,200px);
+        grid-gap:10px;
+    }
+    .header{
+        background-color: darkorchid;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    .sidebar{
+        background-color: aqua;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        
+    }
+    .content1{
+        background-color: coral;
+    
+    }
+    .content2{
+        background-color:crimson;
+        
+    }
+    .content3{
+        background-color:blue;
+        
+    }  
+    .content4{
+        background-color:blue;
+        grid-column-start: 2;
+        grid-column-end: 3;
+       
+    }  
+    .content5{
+        background-color:crimson;
+        grid-column-start: 3;
+        grid-row-end: 4;
+    }
+    .content6{
+        background-color:dimgrey;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start:2;
+        grid-row-end:4;
+    } 
+    </style>
+</head>
+<body>
+    <center>
+        <h1>GRID BOX2</h1>
+    <div class="container">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item sidebar">Sidebar</div>
+        <div class="grid-item content1">content 1</div>
+        <div class="grid-item content2">Content 2</div>
+        <div class="grid-item content3">Content 3</div>
+        <div class="grid-item content4">Content 4</div>
+        <div class="grid-item content6">Content 6</div>
+        <div class="grid-item content5">Content 5</div>
+        </div>
+</body>
+</html>
